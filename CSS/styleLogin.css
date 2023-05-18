@@ -1,0 +1,157 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    background-image: url(../image/login-cadastro2.png);
+    background-repeat: no-repeat;
+}
+
+main{
+    text-align: center;
+    margin: 1.625rem auto;
+    max-width: 18.75rem;
+}
+
+img{
+    width: 130px;
+    height: 129px;
+    left: 145px;
+    top: 38px;
+    border-radius: 50%;
+}
+
+#fazer_login{
+    margin-top: 4.3rem;
+}
+
+#fazer_login div{
+    height: 8rem;
+    width: 20rem;
+    text-align: left;
+    justify-content: space-around;
+}
+
+.email{
+    width: 23.2rem;
+    height: 1.4rem;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    color: #FFFFFF;
+}
+
+.inputEmail{
+    width: 20rem;
+    height: 1rem;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-color: #FFFFFF;
+    background: none;
+}
+
+.inputEmail::placeholder{
+    color: #FFFFFF;
+    opacity: 0.4;
+}
+
+.password{
+    margin-top: 2rem;
+    width: 23.2rem;
+    height: 1.4rem;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    color: #FFFFFF;
+}
+
+.key{
+    width: 20rem;
+    height: 1rem;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-color: #FFFFFF;
+    background: none;
+}
+
+.key::placeholder{
+    color: #FFFFFF;
+    opacity: 0.4;
+}
+
+.fotoG{
+    width: 2.7rem;
+    height: 2.7rem;
+}
+
+.fotoF{
+    width: 2.9rem;
+    height: 2.9rem;
+}
+
+footer{
+    justify-content: center;
+    margin-top: 3rem;
+    height: 33px;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+footer h2{
+    display: inline-flex;
+    height: 2rem;
+    width: 7.813rem;
+    border-radius: 2rem;
+    margin-bottom: 1rem;
+    background-color: rgba(22, 5, 100, 0.445);
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.3rem;
+}
+
+footer h2:hover{
+    color: black;
+    background-color: rgba(171, 170, 230, 0.671);
+    transition: all 0.5s;
+}
+
+footer h3{
+    display: inline-flex;
+    height: 2rem;
+    font-size: 0.9rem;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    cursor: pointer;
+    border: solid;
+    border-radius: 4rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    width: 6rem;
+    height: 1rem;
+    margin-bottom: 2rem;
+}
+
+footer h3:hover{
+    color: rgb(82, 4, 70);
+    transition: all 0.3s;
+}
+
+footer p{
+    font-style: italic;
+    margin-top: 2rem;
+    color: #FFFFFF;
+}
+
+footer ul li{
+    display: inline-block;
+    list-style: none;
+    margin-top: 0.3rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
