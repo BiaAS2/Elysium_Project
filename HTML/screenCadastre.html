@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../CSS/styleCadastre.css">
+    <link rel="stylesheet" href="/CSS/styleCadastre.css">
     <link rel="shortcut icon" href="../image/favicon.ico" type="image/x-icon">
     <title>Cadastro</title>
 </head>
@@ -15,55 +16,54 @@
 <body>
     <main>
         <header>
-            <div class="header">
-                <h1 id="cadastro">Cadastro</h1>
-                <div id="mensagem">
+            <div class="container-header">
+                <div class="title">
+                    <h1 id="cadastro">Cadastro</h1>
+                </div>
+                <div class="mensagem">
                     <h1>Elysium</h1>
-                    <h2>Aprenda do seu jeito <br>aonde estiver!</br></h2>
+                    <h3>Aprenda do seu jeito <br>aonde estiver!</br></h2>
                 </div>
             </div>
         </header>
 
-        <section class="cadastrar_dados">
-            <div id="lista">
-                <ol>
-                    <li>
-                        <p>Nome Completo:</p>
-                        <input type="text" class="caixa">
-                    </li>
+        <main class="container-cadastro">
+            <div id="list">
+                <form action="screenCadastre.html" method="POST">
+                    <div class="user-box">
+                        <input type="text" name="name" required="true">
+                        <label>Nome Completo:</label>
+                    </div>
 
-                    <li>
-                        <p>Nome de Usuário:</p>
-                        <input type="text" class="caixa">
-                    </li>
+                    <div class="user-box">
+                        <input type="text" name="username" required="true">
+                        <label>Nome de Usuário:</label>
+                    </div>
 
-                    <li>
-                        <p>Email:</p>
-                        <input type="email" name="" id="" class="caixa">
-                    </li>
+                    <div class="user-box">
+                        <input type="email" name="email" required="true">
+                        <label>E-mail:</label>
+                    </div>
 
-                    <li>
-                        <p>Senha:</p>
-                        <input type="password" name="" id="" class="caixa">
-                    </li>
-                </ol>
+                    <div class="user-box">
+                        <input type="password" name="password" required="true">
+                        <label>Senha:</label>
+                    </div>
+                </form>
             </div>
-        </section>
+        </main>
+        <div class="register-box">
+            <a href="">Register</a>
+        </div>
 
-        <div id="termos_uso">
+        <div id="termos">
             <input type="checkbox" name="acordo" id="acordo">
-            <label for="acordo">Concordo com os <strong>Termos de Uso do Elysium.</strong></label>
+            <label for="acordo">Concordo com os <span>Termos de Uso do Elysium.</span></label>
         </div>
-
-        <div id="button_cadastrar">
-            <a href="screenLogin.html">
-                <h2>Cadastrar</h2>
-            </a>
-        </div>
-
-        <footer>
-            <p>Direitos Reservados</p>
-        </footer>
     </main>
+    <footer>
+        <p>&copy; 2023 - Todos os direitos reservados.</p>
+    </footer>
 </body>
+
 </html>

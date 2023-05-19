@@ -1,6 +1,7 @@
 *{
-    margin: 0%;
-    padding: 0%;;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body{
@@ -9,100 +10,127 @@ body{
     background-repeat: no-repeat;
 }
 
-.header{
+.container-header{
     display: flex;
-    min-height: 7rem;
-    margin-top: 1rem;
-    margin-left: 6rem;
-    margin-right: 4rem;
-    color: #ffffff;
-    font-style: italic;
-}
-
-#mensagem{
-    text-align: right;
-    margin-right: 1rem;
-    margin-left: auto;
-}
-
-#cadastro{
-    display: flex;
-    text-align: left;
-    justify-content: left;
-    margin-left: 1rem;
-}
-
-#lista {
-    display: flex;
-    height: 15rem;
-    width: 23rem;
-    text-align: left;
-    margin-left: 6rem;
-    margin-bottom: 1rem;
-    margin-top: 2rem;
-}
-
-#lista ol{
-    display: flex;
-    list-style: none;
-    display: grid;
-    color: #ffffff;
-}
-
-.caixa{
-    display: flex;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    width: 22rem;
-    border-color: #ffffff;
-    background: none;
-}
-
-#termos_uso{
-    display: flex;
-    margin-left: 6rem;
-    margin-right: 2rem;
-    margin-top: 3rem;
-    color: #ffffff;
-}
-
-#button_cadastrar{
-    display: flex;
-    margin-top: 3rem;
-    color: #ffffff;
-    cursor: pointer;
-    border-radius: 50rem; 
-    background: rgb(35, 16, 112);
+    justify-content: space-between;
     align-items: center;
-    margin-left: 65rem;
-    margin-right: 6rem;
-    height: 3rem;
-    justify-content: center;
-    transition: all 0.4s;
-    clip-path: ellipse();
 }
 
-#button_cadastrar a{
-    text-decoration: none;
+.title{
+    display: flex;
+    height: 4rem;
     color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-left: 5rem;
+    padding-top: 4rem;
 }
 
-#button_cadastrar a:hover{
-    color: rgb(26, 1, 85);
-    transition: all 0.4s;
+.mensagem{
+    text-align: right;
+    height: 4rem;
+    font-size: 1.5rem;
+    color: #ffffff;
+    padding-right: 5rem;
+    padding-top: 2rem;
+
+}
+.container-cadastro{
+    display: flex;
+    padding-top: 13rem;
+    padding-left: 5rem;
 }
 
-#button_cadastrar:hover{
-    color: rgb(26, 1, 85);
-    background-color: rgb(137, 121, 209);
+.container-cadastro .user-box{
+    position: relative;
+}
+
+.container-cadastro .user-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    font-weight: 300;
+    color: #FFFFFF;
+    margin-bottom: 1.6rem;
+    border: none;
+    border-bottom: 1px solid #FFF;
+    outline: none;
+    background: transparent;
+  }
+
+.container-cadastro .user-box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    font-weight: 500;
+    color: #FFFFFF;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.container-cadastro .user-box input:focus ~ label,
+.container-cadastro .user-box input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: #FFFFFF;
+  font-size: 12px;
+}
+.register-box{
+    display: flex;
+    justify-content: end;
+    padding-right: 5rem;
+}
+
+.register-box a {
+    color: #FFFFFF;
+    text-decoration: none;
+    border: 1px solid #ffffff3f;
+    background: #3C249C;
+    padding: 1rem 6rem 1rem 6rem;
+    border-radius: 50%;
+}
+
+.register-box a:hover{
+    background: #ffffff3f;
+    color: #3C249C;
+    transition: 0.5s;
+}
+
+#termos{
+ padding-left: 4.5rem;
+}
+
+#termos label {
+    color: #FFFFFF;
+}
+#termos label span{
+    color: #000000;
+    font-weight: bold;
+}
+
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    padding-bottom: 1rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 5rem;
+    padding-right: 5rem;
 }
 
 footer{
     display: flex;
-    justify-content: center;
-    margin-top: 2.5rem;
-    font-size: small;
-    color: #ffffff;
-    font-style: italic;
-}
+ }
+
+
+
+
+
