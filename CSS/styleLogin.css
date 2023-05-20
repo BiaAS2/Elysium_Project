@@ -3,10 +3,47 @@
     margin: 0%;
 }
 
-body{
-    font-family: 'Inter', sans-serif;
-    background-image: url(../image/login-cadastro2.png);
-    background-repeat: no-repeat;
+/*Imagem para celulares*/
+@media (min-width: 162px) and (max-width: 928px){
+    body{
+        display: flex;
+        background-image: url(../image/celular_login.png);
+        background-repeat: no-repeat;
+        overflow: auto;
+        background-position: top;
+        background-size: cover;
+        font-family: 'Inter', sans-serif;
+        justify-content: center;
+        background-size: auto;
+    }
+}
+
+/*Imagem para tablets*/
+@media (min-width: 768px) and (max-width: 1280px){
+    body{
+        background: url(../image/tablet_login.png);
+        background-repeat: no-repeat;
+        overflow: auto;
+        background-position: top;
+        background-size: cover;
+        font-family: 'Inter', sans-serif;
+        justify-content: center;
+        background-size: auto;
+    }
+}
+
+/*Imagem para computadores*/
+@media (min-width: 1170px) and (max-width: 2048px){
+    body{
+        background: url(../image/PC_login.png);
+        background-repeat: no-repeat;
+        overflow: auto;
+        background-position: top;
+        background-size: cover;
+        font-family: 'Inter', sans-serif;
+        justify-content: center;
+        background-size: auto;
+    }
 }
 
 main{

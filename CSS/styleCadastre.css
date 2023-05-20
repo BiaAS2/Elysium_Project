@@ -4,10 +4,43 @@
     box-sizing: border-box;
 }
 
-body{
-    font-family: 'Inter', sans-serif;
-    background-image: url(../image/login-cadastro2.png);
-    background-repeat: no-repeat;
+/*Imagem para celulares*/
+@media (min-width: 162px) and (max-width: 928px){
+    body{
+        display: flex;
+        background-image: url(../image/celular_login.png);
+        background-repeat: no-repeat;
+        overflow: auto;
+        background-position: top;
+        background-size: cover;
+        font-family: 'Inter', sans-serif;
+        justify-content: center;
+    }
+}
+
+/*Imagem para tablets*/
+@media (min-width: 768px) and (max-width: 1280px){
+    body{
+        display: inline;
+        background: url(../image/tablet_login.png);
+        background-repeat: no-repeat;
+        overflow: auto;
+        background-position: top;
+        background-size: cover;
+        font-family: 'Inter', sans-serif;
+    }
+}
+
+/*Imagem para computadores*/
+@media (min-width: 1170px) and (max-width: 2048px){
+    body{
+        background: url(../image/PC_login.png);
+        background-repeat: no-repeat;
+        overflow: auto;
+        background-position: top;
+        font-family: 'Inter', sans-serif;
+        background-size: auto;
+    }
 }
 
 .container-header{
@@ -22,8 +55,8 @@ body{
     color: #ffffff;
     font-size: 1.5rem;
     font-weight: bold;
-    padding-left: 5rem;
-    padding-top: 4rem;
+    padding-left: 4rem;
+    padding-top: 2rem;
 }
 
 .mensagem{
@@ -31,13 +64,13 @@ body{
     height: 4rem;
     font-size: 1.5rem;
     color: #ffffff;
-    padding-right: 5rem;
+    padding-right: 4rem;
     padding-top: 2rem;
 
 }
 .container-cadastro{
     display: flex;
-    padding-top: 13rem;
+    padding-top: 6rem;
     padding-left: 5rem;
 }
 
@@ -80,33 +113,37 @@ body{
 .register-box{
     display: flex;
     justify-content: end;
-    padding-right: 5rem;
+    padding-right: 3rem;
+    padding-top: 2rem;
 }
 
 .register-box a {
     color: #FFFFFF;
     text-decoration: none;
-    border: 1px solid #ffffff3f;
-    background: #3C249C;
-    padding: 1rem 6rem 1rem 6rem;
+    border: 1px solid #ffffff86;
+    background: #6448d3;
+    padding: 1rem 4rem 1rem 4rem;
     border-radius: 50%;
 }
 
 .register-box a:hover{
-    background: #ffffff3f;
-    color: #3C249C;
-    transition: 0.5s;
+    color: #ffffff;
+    transition: 0.6s;
+    background: rgb(184,4,116);
+    background: linear-gradient(279deg, rgba(184,4,116,1) 0%, rgba(35,27,198,1) 100%);
+    box-shadow: 3px 4px #00000085;
 }
 
 #termos{
- padding-left: 4.5rem;
+    padding-left: 5rem;
+    padding-top: 2rem;
 }
 
 #termos label {
     color: #FFFFFF;
 }
 #termos label span{
-    color: #000000;
+    color: #ffffff;
     font-weight: bold;
 }
 
@@ -118,19 +155,11 @@ footer{
     color: white;
     text-align: center;
     padding-bottom: 1rem;
-    font-weight: bold;
     display: flex;
     justify-content: center;
     align-items: center;
     padding-left: 5rem;
     padding-right: 5rem;
+    font-size: small;
+    font-style: italic;
 }
-
-footer{
-    display: flex;
- }
-
-
-
-
-
