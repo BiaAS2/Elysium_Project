@@ -15,14 +15,32 @@
 
 <body>
     <main>
-        <div class="menu">
-            <div id="linha">
-                <input type="checkbox" id="check">
-                <label for="check" class="checkBtn">
-                    <i class="fa fa-bars"></i>
+        <div class="container-lateral">
+            <div class="menu-content">
+                <label class="open-menu" for="open-menu">
+                    <input class="input-menu" id="open-menu" type="checkbox" name="menu-open">
+                    <div class="navegacao-mobile">
+                        <span class="linha-menu"></span>
+                        <span class="linha-menu"></span>
+                        <span class="linha-menu"></span>
+                    </div>
                 </label>
             </div>
-    
+        </div>
+        
+        <div class="retangulo-roxo">
+            <ul class="list-menu">
+                <li class="item-menu">
+                    <a class="link-menu" href="#">Configurações</a>
+                </li>
+                <li class="item-menu">
+                    <a class="link-menu" href="#">Limpar Conversa</a>
+                </li>
+                <li class="item-menu">
+                    <a class="link-menu" href="#">Sair da Conta</a>
+                </li>
+            </ul>
+        
             <div id="perfil">
                 <div class="Ellipse">
                     <div id="boneco">
@@ -39,19 +57,9 @@
                 <p>Nome de Usuário</p>
             </div>
             
-            <ol class="botoes">
-                <li>
-                    <input type="button" value="Configurações">
-                </li>
-
-                <li>
-                    <input type="button" value="Limpar Conversa">
-                </li>
-
-                <li>
-                    <input type="button" value="Sair da Conta">
-                </li>
-            </ol>
+            <footer>
+                <p>Direitos Reservados</p>
+            </footer>
         </div>
         
         <div id="barra_mensagem">
@@ -69,10 +77,10 @@
                 <div class="triangulo_roxo"></div>
             </div>
         </div>
-
-        <footer>
-            <p>Direitos Reservados</p>
-        </footer>
+        
+        <script src="https://kit.fontawesome.com/af562a2a63.js" crossorigin="anonymous">
+        </script>
+        
     </main>
 </body>
 </html>

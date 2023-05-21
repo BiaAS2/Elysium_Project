@@ -8,55 +8,14 @@
 @media (max-width: 928px){
     body{
         display: flex;
-        background-image: url(../image/inicial_pc.png);
+        background-image: url(../image/inicial-principal.png);
         background-repeat: no-repeat;
         overflow: auto;
         background-position: top;
         background-size: cover;
         font-family: 'Inter', sans-serif;
-        
     }
     
-    .menu{
-      display: flex;
-      top: 4.1rem;
-      transition: all 1s;
-      display: grid;
-      width: 18rem;
-      height: 38.6rem;
-      background: linear-gradient(180.01deg, #343757 17.92%, rgba(108, 33, 166, 0.484375) 98.23%);
-      align-items: center;
-      justify-items: center;
-    }
-
-    #linha{
-        background-color: #000;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        top: 4.1rem;
-        left: 100%;
-        transition: all 1s;
-        width: 4rem;
-        height: 3rem;
-        margin-left: 14rem;
-        margin-top: 0.7rem;
-      }
-
-    .checkBtn{
-    display: flex;
-    position: relative;
-    bottom: 50px;
-    margin-right: 20px;
-    cursor: pointer;
-    color: #ffffff;
-    font-size: 1.5rem;
-    }
-
-    #check:checked~.botoes{
-    left: 0%;
-    }
-      
 }
 
 /*Imagem para tablets*/
@@ -84,15 +43,104 @@
     }
 }
 
-#menu{
-    display: grid;
-    width: 18rem;
-    height: 38.6rem;
-    background: linear-gradient(180.01deg, #343757 17.92%, rgba(108, 33, 166, 0.484375) 98.23%);
-    align-items: center;
-    justify-items: center;
+ul{
+    list-style: none;
 }
 
+/*Menu Responsivo*/
+@media (min-width: 928px) {
+    .menu-content {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    }
+
+    .list-menu {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        background: #fff;
+        box-shadow: 2px 9px 49px -17px rgba(0, 0, 0, 0.3);
+    }
+    
+    .item-menu{
+        flex: auto;
+        background: #545bc4;
+    }
+    
+    .item-menu .link-menu {
+        display: flex;
+        padding: 15px;
+        color: #555;
+        transition: .4s;
+        cursor: pointer;
+        text-align: center
+    }
+    
+    .item-menu .link-menu:hover{
+    background: #545bc4;
+    color: #fff;
+    }
+    
+    .navegacao-mobile {
+        display: none;
+    } 
+}
+
+.navegacao-mobile{
+    padding: 10px;
+    width: 20rem;
+    cursor: pointer;
+}
+
+.linha-menu{
+    width: 28px;
+    height: 4px;
+    border-radius: 5px;
+    background: #fdfdfd;
+    margin: 4px;
+    display: flex;
+}
+
+.input-menu{
+    display: flex;
+}
+
+.list-menu {
+    width: 100%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    transition: all 1s;
+}
+
+.link-menu{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.item-menu .link-menu{
+    padding: 15px;
+    color: #ffffff;
+    display: block;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.input-menu:checked~ .retangulo-roxo{
+    right: 0%;
+}
+
+.retangulo-roxo{
+    background: linear-gradient(180.01deg, #343757 17.92%, rgba(108, 33, 166, 0.484375) 98.23%);
+    padding-bottom: 32.7rem;
+    width: 20rem;
+    border-bottom-right-radius: 50px;
+    filter: drop-shadow(4px 3px 2px #00000096);
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+/*
 .Ellipse{
     display: flex;
     position: relative;
@@ -123,7 +171,7 @@
     align-self: center;
 }
 
-/*Posição do Boneco(cabeça e corpo juntos)*/
+/*Posição do Boneco(cabeça e corpo juntos)
 #boneco{
     width: 48px;
     height: 75px;
@@ -139,9 +187,4 @@
     top: 0.8rem;
     transform: rotate(-18.23deg);
 }
-
-.checkBtn{
-    margin-top: 0.4rem;
-    cursor: pointer;
-    float: right;
-}
+*/
