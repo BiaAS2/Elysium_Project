@@ -7,48 +7,22 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../CSS/styleMain.css">
     <link rel="shortcut icon" href="../image/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="../CSS/styleResponsive.css">
+    <link rel="stylesheet" href="../CSS/styleMain.css">
+
     <title>Bem Vindo ao Elysium</title>
 </head>
 
-<body>
-    <main>
-        <div class="container-lateral">
-            <div class="menu-content">
-                <label class="open-menu" for="open-menu">
-                    <input class="input-menu" id="open-menu" type="checkbox" name="menu-open">
-                    <div class="navegacao-mobile">
-                        <span class="linha-menu"></span>
-                        <span class="linha-menu"></span>
-                        <span class="linha-menu"></span>
-                    </div>
-                </label>
-            </div>
-        </div>
-        
-        <div class="retangulo-roxo">
-            <ul class="list-menu">
-                <li class="item-menu">
-                    <a class="link-menu" href="#">Configurações</a>
-                </li>
-                <li class="item-menu">
-                    <a class="link-menu" href="#">Limpar Conversa</a>
-                </li>
-                <li class="item-menu">
-                    <a class="link-menu" href="#">Sair da Conta</a>
-                </li>
-            </ul>
-        
-            <div id="perfil">
-                <div class="Ellipse">
-                    <div id="boneco">
-                        <div class="cabeça_boneco"></div>
-                        <div class="corpo_boneco"></div>
-                    </div>
-                    
-                    <img src="../image/saturno_P.png" alt="saturno pequeno" class="saturno">
+<body onresize="mudouTamanho()">
+    <header>
+        <span id="clickButton" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+        <menu id="itens">
+            <div class="circulo">
+                <div id="boneco">
+                    <div class="cabeca_boneco"></div>
+                    <div class="corpo_boneco"></div>
                 </div>
             </div>
             
@@ -57,11 +31,19 @@
                 <p>Nome de Usuário</p>
             </div>
             
+            <ul>
+                <li><a href="#">Configurações</a></li>
+                <li><a href="#">Limpar Conversa</a></li>
+                <li><a href="#">Sair da Conta</a></li>
+            </ul>
+            
             <footer>
                 <p>Direitos Reservados</p>
             </footer>
-        </div>
-        
+        </menu>
+    </header>
+    
+    <main>
         <div id="barra_mensagem">
             <div class="retângulo"></div>
 
@@ -77,10 +59,28 @@
                 <div class="triangulo_roxo"></div>
             </div>
         </div>
-        
-        <script src="https://kit.fontawesome.com/af562a2a63.js" crossorigin="anonymous">
-        </script>
-        
     </main>
+
+    <script>
+        /*Menu responsivo de acordo com a tela*/
+        function mudouTamanho(){
+            if(window.innerWidth >= 768){
+                itens.style.display = 'block'
+            }
+            else{
+                itens.style.display = 'none'
+            }
+        }
+
+        /*Abrir e fechar o Menu*/
+        function clickMenu(){
+            if(itens.style.display == 'block'){
+                itens.style.display = 'none'
+            }
+            else{
+                itens.style.display = 'block'
+            }
+        }
+    </script>
 </body>
 </html>
