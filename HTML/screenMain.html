@@ -8,44 +8,63 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="../image/favicon.ico" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="../CSS/styleResponsive.css">
     <link rel="stylesheet" href="../CSS/styleMain.css">
 
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link rel="stylesheet" href="font-awesome.css"> 
     <title>Bem Vindo ao Elysium</title>
 </head>
 
-<body onresize="mudouTamanho()">
+<body>
     <header>
-        <span id="clickButton" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
-        <menu id="itens">
+        <div class="itens-menu show">
             <div class="circulo">
-                <div id="boneco">
+                <div id="elipse" >
                     <div class="cabeca_boneco"></div>
                     <div class="corpo_boneco"></div>
                 </div>
+                <img src="../image/saturno_P.png" alt="">
             </div>
             
             <div id="nome">
-                <p>Nome Completo</p>
+                <h1>Nome Completo</h1>
                 <p>Nome de Usuário</p>
             </div>
-            
+
             <ul>
-                <li><a href="#">Configurações</a></li>
-                <li><a href="#">Limpar Conversa</a></li>
-                <li><a href="#">Sair da Conta</a></li>
+                <a href="#">Configurações</a>
+                <a href="#">Limpar Conversa</a>
+                <a href="#">Sair da Conta</a>
             </ul>
+
+            <div class="imagens">
+                <input id="config" type="image" src="../image/config_branca.png" alt="">
+                <input id="trash" type="image" src="../image/lixeira.png" alt="">
+                <input id="logout" type="image" src="../image/logout.png" alt="">
+            </div>
+
+            <div class="bars">
+                <i class="fa fa-bars"></i>
+            </div>
             
             <footer>
                 <p>Direitos Reservados</p>
             </footer>
-        </menu>
+        </div>
     </header>
     
-    <main>
+    <content>
         <div id="barra_mensagem">
-            <div class="retângulo"></div>
+            <div class="retangulo">
+                <input type="text" name="" id="texto" placeholder="Escreva Aqui">
+                
+                <div id="send">
+                    <div class="triangulo_preto">
+                        <div class="triangulo_roxo"></div>
+                    </div>
+                </div>
+            </div>
 
             <div class="microfone">
                 <div class="cima"></div>
@@ -53,34 +72,17 @@
                 <div class="linha2"></div>
                 <div class="linha3"></div>
             </div>
-
-            <div>
-                <div class="triangulo_preto"></div>
-                <div class="triangulo_roxo"></div>
-            </div>
         </div>
-    </main>
+    </content>
 
     <script>
-        /*Menu responsivo de acordo com a tela*/
-        function mudouTamanho(){
-            if(window.innerWidth >= 768){
-                itens.style.display = 'block'
-            }
-            else{
-                itens.style.display = 'none'
-            }
-        }
+        let barsEl = document.querySelector('.bars');
+        let iconBarsEl = document.querySelector('.itens-menu');
 
-        /*Abrir e fechar o Menu*/
-        function clickMenu(){
-            if(itens.style.display == 'block'){
-                itens.style.display = 'none'
-            }
-            else{
-                itens.style.display = 'block'
-            }
-        }
+        barsEl.addEventListener('click', () => {
+        iconBarsEl.classList.toggle('show')
+        });
+        
     </script>
 </body>
 </html>

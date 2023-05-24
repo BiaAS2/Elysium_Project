@@ -18,10 +18,6 @@
         font-family: 'Inter', sans-serif;
     }
 
-    #clickButton{
-        display: none
-    }
-
     menu{
         display: block;
     }
@@ -43,51 +39,3 @@
     }
 }
 
-/*
-.Ellipse{
-    display: flex;
-    position: relative;
-    width: 8rem;
-    height: 8rem;
-    bottom: 8rem;
-    right: 1rem;
-    background: #D9D9D9;
-    clip-path: circle();
-    justify-content: center;
-    align-items: center;
-}
-
-.cabeça_boneco{
-    display: flex;
-    width: 3rem;
-    height: 2.188rem;
-    background: #000000;
-    clip-path: circle();
-}
-
-.corpo_boneco{
-    display: flex;
-    width: 3rem;
-    height: 2.5rem;
-    background: #000000;
-    border-radius: 1.25rem 1.25rem 0rem 0rem;
-    align-self: center;
-}
-
-/*Posição do Boneco(cabeça e corpo juntos)
-#boneco{
-    width: 48px;
-    height: 75px;
-    padding-top: 0.9rem;
-    filter: drop-shadow(0px 4px 5px rgba(0, 0, 0, 0.38));
-}
-
-.saturno{
-    position: absolute;
-    width: 50px;
-    height: 35px;
-    left: 0.8rem;
-    top: 0.8rem;
-    transform: rotate(-18.23deg);
-}
-*/
