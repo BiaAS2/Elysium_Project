@@ -8,8 +8,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="../image/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="../CSS/responsiveMobile.css">
-    <link rel="stylesheet" href="../CSS/responsiveTablet.css">
+    <link rel="stylesheet" href="../CSS/settingsMobile.css">
+    <link rel="stylesheet" href="../CSS/settingTablet.css">
     <link rel="stylesheet" href="../CSS/styleSettings.css">
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,400,0,0" />
@@ -58,12 +58,17 @@
                         <div class="cabeca_boneco"></div>
                         <div class="corpo_boneco"></div>
                     </div>
-                    <img src="../image/saturno_P.png" alt="">
-                    <img src="../image/edit27.png" alt="">
+                    
+                    <div class="bolinha1"></div>
+                    <div class="bolinha2"></div>
+
+                    <img class="saturno" src="../image/saturno_P.png" alt="">
+                    <img class="editar" src="../image/edit27.png" alt="">
                 </div>
                 
                 <div id="nomes">
-                    <p>Nome Completo</p>
+                    <h1>Nome Completo</h1>
+
                     <p>Nome de Usuário</p>
                     <div class="edit">
                         <input type="text" name="" id="nameU">
@@ -96,8 +101,8 @@
                 </div>
 
                 <div class="idioma">
-                    <p>Idioma:</p>
-
+                    <p>Idioma:</p><br>
+                    
                     <input type="radio" name="idioma" id="ingles" value="Inglês">
                     <label for="ingles">Inglês</label>
 
@@ -122,12 +127,18 @@
                     <label for="inicializar">Iniciar com o Computador</label>
                 </div>
 
-                <div>
-                    
-                </div>
-
             </div>
         </div>
     </content>
+
+    <script>
+        let barsEl = document.querySelector('.bars');
+        let iconBarsEl = document.querySelector('.itens-menu');
+
+        barsEl.addEventListener('click', () => {
+        iconBarsEl.classList.toggle('show')
+        });
+        
+    </script>
 </body>
 </html>
