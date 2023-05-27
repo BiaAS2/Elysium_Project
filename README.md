@@ -2,7 +2,7 @@
 <h1 align="center">  Elysium </h1>
 
 <p align="center">
-Seu Assistente Virtual.
+Seu Assistente Virtual!
 </p>
 
 <p align="center">
