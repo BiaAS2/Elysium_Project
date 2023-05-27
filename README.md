@@ -32,4 +32,4 @@ Para acessar o material do nosso Projeto acesse o link: [Canva](https://www.canv
 
 ## 🔖 Layout
 
-Você pode visualizar o layout do projeto através [DESSE LINK](https://www.figma.com/community/file/1223782952174124295). É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
+Você pode visualizar o layout do projeto através [DESSE LINK](https://www.figma.com/file/AQDdB8toAUPney3ZTGaWOL/Design-do-Elysium?type=design&node-id=0-1&t=xs8vUPgeYBstjoab-0). É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
