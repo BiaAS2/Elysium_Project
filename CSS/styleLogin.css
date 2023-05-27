@@ -4,7 +4,7 @@
 }
 
 /*Imagem para celulares*/
-@media (min-width: 162px) and (max-width: 928px){
+@media (max-width: 768px){
     body{
         display: flex;
         background-image: url(../image/celular_login.png);
@@ -18,7 +18,7 @@
 }
 
 /*Imagem para tablets*/
-@media (min-width: 768px) and (max-width: 1280px){
+@media screen and (min-width: 768px){
     body{
         background: url(../image/tablet_login.png);
         background-repeat: no-repeat;
@@ -31,7 +31,7 @@
 }
 
 /*Imagem para computadores*/
-@media (min-width: 1170px) and (max-width: 2048px){
+@media screen and (max-width: 993px){
     body{
         background: url(../image/PC_login.png);
         background-repeat: no-repeat;
@@ -59,76 +59,79 @@ img{
 }
 
 #fazer_login{
-    margin-top: 4.3rem;
+    margin-top: 3.8rem;
 }
 
 #fazer_login div{
-    height: 8rem;
+    height: 5rem;
     width: 20rem;
     text-align: left;
     justify-content: space-around;
 }
 
-.email{
-    width: 23.2rem;
-    height: 1.4rem;
-    font-size: 1.25rem;
-    line-height: 1.5rem;
+.user-box{
+    position: relative;
+}
+
+.user-box input{
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    font-weight: 300;
     color: #FFFFFF;
+    margin-bottom: 1.6rem;
+    border: none;
+    border-bottom: 1px solid #FFF;
+    outline: none;
+    background: transparent;
 }
 
-.inputEmail{
-    width: 20rem;
-    height: 1rem;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    border-color: #FFFFFF;
-    background: none;
-}
-
-.inputEmail::placeholder{
+.user-box label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 2px 0;
+    font-size: 16px;
+    font-weight: 500;
     color: #FFFFFF;
-    opacity: 0.4;
+    pointer-events: none;
+    transition: .5s;
 }
 
-.password{
-    margin-top: 2rem;
-    width: 23.2rem;
-    height: 1.4rem;
-    font-size: 1.25rem;
-    line-height: 1.5rem;
+.user-box input:focus ~ label, 
+.user-box input:valid ~ label{
+    top: -20px;
+    left: 0;
     color: #FFFFFF;
-}
-
-.key{
-    width: 20rem;
-    height: 1rem;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    border-color: #FFFFFF;
-    background: none;
-}
-
-.key::placeholder{
-    color: #FFFFFF;
-    opacity: 0.4;
+    font-size: 12px;
 }
 
 .fotoG{
     width: 2.7rem;
     height: 2.7rem;
+    cursor: pointer;
+}
+
+.fotoG:hover{
+    box-shadow: inset 50px 0px 20px #ffffff;
+    transition: 0.3s all ease-in-out;
 }
 
 .fotoF{
     width: 2.9rem;
     height: 2.9rem;
+    cursor: pointer;
+}
+
+.fotoF:hover{
+    box-shadow: inset 50px 0px 20px #ffffff;
+    transition: 0.3s all ease-in-out;
 }
 
 footer{
     justify-content: center;
-    margin-top: 3rem;
+    position: relative;
+    bottom: 0;
     height: 33px;
     font-weight: 400;
     font-size: 12px;
@@ -156,7 +159,6 @@ footer h2:hover{
 
 footer h3{
     display: inline-flex;
-    height: 2rem;
     font-size: 0.9rem;
     align-items: center;
     justify-content: center;
@@ -172,14 +174,20 @@ footer h3{
 }
 
 footer h3:hover{
-    color: rgb(82, 4, 70);
-    transition: all 0.3s;
+    color: rgb(50, 1, 90);
+    transition: all 0.2s;
 }
 
 footer p{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
     font-style: italic;
-    margin-top: 2rem;
     color: #FFFFFF;
+    padding-bottom: 1rem;
+    font-size: small;
+    font-style: italic;
 }
 
 footer ul li{

@@ -18,15 +18,19 @@
             <img src="../image/logo.jpg" alt="Logo do projeto Elysium">
         </header>
         
-        <section id="fazer_login">
-            <div>
-                <p class="email">E-mail:</p>
-                <input type="email" placeholder="exemplo: nomesobrenome00@gmail.com" class="inputEmail">
-                
-                <p class="password">Senha:</p>
-                <input type="password" placeholder="Use uma senha forte." class="key">
-            </div>
-        </section>
+        <div id="fazer_login">
+            <form action="screenLogin.html" method="POST">
+                <div class="user-box">
+                    <input type="email" name="email" required="true">
+                    <label>E-mail:</label>
+                </div>
+
+                <div class="user-box">
+                    <input type="password" name="password" required="true">
+                    <label>Senha:</label>
+                </div>
+            </form>
+        </div>
         
         <footer>
             <a href="screenMain.html">
