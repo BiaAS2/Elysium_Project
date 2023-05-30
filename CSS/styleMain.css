@@ -27,6 +27,10 @@
         box-shadow: 3px 0px 5px #00000081;
     }
 
+    .show{
+        transform: translateX(0%);
+    }
+
     .bars{
         display: none;
     }
@@ -216,5 +220,151 @@
         border-bottom: 10px solid transparent;
         border-left: 15px solid #8A3BEB;
         border-radius: 3px;
+    }
+    
+    .microfone{
+        display: flex;
+        position: relative;
+        left: 2rem;
+        width: 4rem;
+        height: 3rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .material-symbols-outlined {
+        cursor: pointer;
+        font-variation-settings:
+        'FILL' 1,
+        'wght' 900,
+        'GRAD' 200,
+        'opsz' 40
+    }
+
+    .container{
+        position: absolute;
+        display: flex;
+        bottom: 0;
+        left: 22rem;
+        width: min-content;
+        padding-bottom: 8rem;
+    }
+
+    #linha{
+        border-radius: 50px;
+        height: 3rem;
+        border: 3px solid #FFFFFF;
+        animation: scale 1.4s alternate infinite;
+        margin-right: 0.5rem;
+    }
+
+    #linha2{
+        border-radius: 50px;
+        height: 3rem;
+        border: 3px solid #FFFFFF;
+        animation: scale2 1s alternate infinite;
+        margin-right: 0.5rem;
+    }
+
+    #linha3{
+        border-radius: 50px;
+        height: 3rem;
+        border: 3px solid #FFFFFF;
+        animation: scale3 1.5s alternate infinite;
+        margin-right: 0.5rem;
+    }
+
+    #linha4{
+        border-radius: 50px;
+        height: 3rem;
+        border: 3px solid #FFFFFF;
+        animation: scale4 0.9s alternate infinite;
+        margin-right: 0.5rem;
+    }
+
+    #linha5{
+        border-radius: 50px;
+        height: 3rem;
+        border: 3px solid #FFFFFF;
+        animation: scale5 0.7s alternate infinite;
+        margin-right: 0.5rem;
+    }
+
+    #linha6{
+        border-radius: 50px;
+        height: 3rem;
+        border: 3px solid #FFFFFF;
+        animation: scale6 1.2s alternate infinite;
+        margin-right: 0.5rem;
+    }
+
+    @keyframes scale {
+        0%{
+            transform: scaleY(0);
+        }
+        50%{
+            transform: scaleY(1);
+        }
+        100%{
+            transform: scaleY(0);
+        }
+    }
+
+    @keyframes scale2 {
+        0%{
+            transform: scaleY(1);
+        }
+        50%{
+            transform: scaleY(1.5);
+        }
+        100%{
+            transform: scaleY(0.3);
+        }
+    }
+    
+    @keyframes scale3 {
+        0%{
+            transform: scaleY(1);
+        }
+        50%{
+            transform: scaleY(0);
+        }
+        100%{
+            transform: scaleY(2.3);
+        }
+    }
+
+    @keyframes scale4 {
+        0%{
+            transform: scaleY(1);
+        }
+        50%{
+            transform: scaleY(1.5);
+        }
+        100%{
+            transform: scaleY(0.3);
+        }
+    }
+    @keyframes scale5 {
+        0%{
+            transform: scaleY(1);
+        }
+        50%{
+            transform: scaleY(0);
+        }
+        100%{
+            transform: scaleY(2.2);
+        }
+    }
+    @keyframes scale6 {
+        0%{
+            transform: scaleY(1);
+        }
+        50%{
+            transform: scaleY(0);
+        }
+        100%{
+            transform: scaleY(0.3);
+        }
     }
 }

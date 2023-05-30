@@ -26,6 +26,10 @@
         box-shadow: 3px 0px 5px #00000081;
     }
     
+    .show{
+        transform: translateX(0%);
+    }
+
     .bars{
         display: none;
     }
@@ -166,6 +170,7 @@
         position: relative;
         top: 4rem;
         right: 8.6rem;
+        cursor: pointer;
     }
 
     .cabeca_boneco{
@@ -217,6 +222,10 @@
         border-color: #000000;
     }
 
+    #nomes .edit img{
+        cursor: pointer;
+    }
+
     #informacoes{
         position: relative;
         bottom: 6rem;
@@ -225,6 +234,10 @@
     #informacoes p{
         padding: 0.5rem;
         font-size: 1rem;
+    }
+
+    #informacoes img{
+        cursor: pointer;
     }
 
     #informacoes #input-Email, #input-Key{

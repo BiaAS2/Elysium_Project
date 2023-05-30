@@ -25,14 +25,14 @@
         height: 100vh;
         border-radius: 0px 40px 40px 0px;
         box-shadow: 3px 0px 5px #00000081;
-        transform: translateX(-100%);
+        transform: translateX(0%);
         transition: all 0.4s linear;
         position: relative;
         z-index: 1000;
     }
 
     .show{
-        transform: translateX(0%);
+        transform: translateX(-100%);
     }
     
     .bars{
@@ -112,10 +112,10 @@
 
     #conteudo{
         background-clip: border-box;
-        position: relative;
-        width: 21rem;
-        height: 100vh;
-        right: 19rem;
+        position: absolute;
+        width: 100%;
+        height: 120vh;
+        left: 0;
         background: rgba(220, 193, 242, 0.75);
         border-radius: 50px;
         padding: 2rem;
@@ -178,6 +178,7 @@
         position: relative;
         top: 4rem;
         right: 8.6rem;
+        cursor: pointer;
     }
 
     .cabeca_boneco{
@@ -228,6 +229,10 @@
         border-color: #000000;
     }
 
+    #nomes .edit img{
+        cursor: pointer;
+    }
+
     #informacoes{
         position: relative;
         bottom: 0.7rem;
@@ -236,6 +241,10 @@
     #informacoes p{
         padding: 0.5rem;
         font-size: 1rem;
+    }
+
+    #informacoes img{
+        cursor: pointer;
     }
 
     #informacoes #input-Email, #input-Key{
@@ -327,10 +336,11 @@
 
     .idioma{
         display: inline-block;
-        position: relative;
-        width: 20rem;
-        bottom: 4.2rem;
-        left: 10rem;
+        position: absolute;
+        width: 10rem;
+        bottom: 0;
+        left: 0;
+        padding-left: 2rem;
     }
 
     .idioma label{
@@ -342,9 +352,10 @@
 
     .checkBox{
         display: block;
-        position: relative;
-        bottom: 3rem;
-        width: 15rem;
+        position: absolute;
+        bottom: 8.7rem;
+        right: 0;
+        width: 10rem;
     }
 
     .checkBox label{
