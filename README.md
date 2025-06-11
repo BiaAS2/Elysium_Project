@@ -100,7 +100,9 @@ Este projeto está sob a licença MIT. Veja o arquivo `LICENSE` para mais detalh
 ## 👨‍💻 Autores
 
 **Lucelho Silva e Beatriz Alves**
-- LinkedIn Lucelho Silva: [https://linkedin.com/in/lucelhosilva] and - LinkedIn Beatriz Alves: [https://www.linkedin.com/in/beatriz-alves-de-souza-789a84239] 
+
+- Lucelho Silva - [linkedin](https://linkedin.com/in/lucelhosilva "Linkedin Lucelho Silva")
+- Beatriz Alves - [linkedin](https://www.linkedin.com/in/beatriz-alves-de-souza-789a84239 "Linkedin Beatriz Alves")
 
 ## 🙏 Agradecimentos
 
