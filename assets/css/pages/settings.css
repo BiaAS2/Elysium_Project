@@ -1,0 +1,131 @@
+/**
+ * Página de Configurações - Elysium
+ *
+ * Este arquivo é responsável por
+ * definir estilos específicos
+ * para a página de configurações
+ * do usuário.
+ *
+ * Inclui seções de perfil,
+ * informações pessoais,
+ * idioma, tema e
+ * checkboxes de preferências.
+ *
+ * @author Lucelho Silva
+ * @version 2.0
+ * @since 2025
+ */
+.settings-page {
+  font-family: var(--font-family);
+  height: 100vh;
+  overflow: hidden; /* Remove scroll vertical */
+}
+
+/* Profile section */
+.profile-section {
+  position: relative;
+  width: 30rem;
+  height: 4rem;
+  left: 11rem;
+  bottom: 8rem; /* Ajustado para compactar */
+}
+
+.profile-section p,
+.profile-section h1 {
+  padding: 0.2rem; /* Reduzido */
+  color: var(--black);
+  margin: 0; /* Remove margem padrão */
+}
+
+.profile-section h1 {
+  font-size: var(--font-size-large); /* Reduzido */
+}
+
+.profile-section .edit-input {
+  width: 20rem;
+}
+
+.profile-section .edit-icon {
+  cursor: pointer;
+}
+
+/* Information section */
+.info-section {
+  position: relative;
+  bottom: 4rem; /* Ajustado para compactar */
+}
+
+.info-section p {
+  padding: var(--spacing-xs); /* Reduzido */
+  font-size: var(--font-size-normal); /* Reduzido */
+  margin: 0.5rem 0; /* Margem mínima */
+}
+
+.info-section img {
+  cursor: pointer;
+}
+
+.info-section .info-input {
+  outline: none;
+  width: 20rem;
+}
+
+/* Theme toggle */
+.theme-toggle {
+  position: relative;
+  width: 7rem;
+  font-size: var(--font-size-medium); /* Reduzido */
+  bottom: 2rem; /* Ajustado para compactar */
+}
+
+/* Language section */
+.language-section {
+  display: inline-block;
+  position: relative;
+  width: 20rem;
+  bottom: 6rem; /* Ajustado para compactar */
+  left: 20rem;
+}
+
+.language-section p {
+  font-size: var(--font-size-medium); /* Reduzido */
+  margin: 0 0 0.5rem 0; /* Margem reduzida */
+}
+
+.language-section label {
+  display: block;
+  position: relative;
+  left: var(--spacing-md);
+  bottom: 1rem; /* Reduzido */
+  font-size: var(--font-size-normal); /* Reduzido */
+  margin-bottom: 0.3rem; /* Espaçamento reduzido */
+}
+
+/* Checkbox section */
+.checkbox-section {
+  display: block;
+  position: relative;
+  bottom: 10rem; /* Ajustado para compactar */
+  width: 15rem;
+}
+
+.checkbox-section label {
+  display: block;
+  position: relative;
+  left: var(--spacing-md);
+  bottom: 0.8rem; /* Reduzido */
+  font-size: var(--font-size-normal); /* Reduzido */
+  margin-bottom: 0.5rem; /* Espaçamento reduzido */
+}
+
+/* Profile avatar - compactado */
+.profile-avatar {
+  display: flex;
+  position: relative;
+  width: 18rem;
+  height: 10rem; /* Reduzido */
+  align-items: center;
+  padding-top: var(--spacing-sm); /* Reduzido */
+  justify-content: space-around;
+  padding-bottom: 2rem; /* Reduzido */
+}

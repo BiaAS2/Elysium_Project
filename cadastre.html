@@ -1,0 +1,73 @@
+<!--
+  * Página de Cadastro - Elysium
+  *
+  * Esta página é responsável por
+  * registrar novos usuários no
+  * sistema Elysium com
+  * validação de formulário.
+  *
+  * Coleta informações básicas:
+  * nome completo, usuário,
+  * e-mail e senha com
+  * concordância de termos.
+  *
+  * @author Lucelho Silva
+  * @version 2.0
+  * @since 2025
+-->
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro - Elysium</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="icon" href="./assets/image/favicon.ico" type="image/x-icon" />
+  </head>
+  <body class="register-page">
+    <div class="auth-container register-container">
+      <header class="register-header">
+        <img src="./assets/image/logo.jpg" alt="Logo Elysium" />
+      </header>
+
+      <form action="chat.html" method="POST" class="register-form">
+        <div class="form-group">
+          <label for="name" class="form-label">Nome Completo</label>
+          <input type="text" id="name" name="name" class="form-input" required />
+        </div>
+
+        <div class="form-group">
+          <label for="username" class="form-label">Nome de Usuário</label>
+          <input type="text" id="username" name="username" class="form-input" required />
+        </div>
+
+        <div class="form-group">
+          <label for="email" class="form-label">E-mail</label>
+          <input type="email" id="email" name="email" class="form-input" required />
+        </div>
+
+        <div class="form-group">
+          <label for="password" class="form-label">Senha</label>
+          <input type="password" id="password" name="password" class="form-input" required />
+        </div>
+
+        <div class="checkbox-group">
+          <input type="checkbox" id="terms" name="terms" required />
+          <label for="terms">Concordo com os <a href="#">Termos de Uso</a></label>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Cadastrar</button>
+      </form>
+
+      <div class="register-actions">
+        <p>Já tem conta? <a href="index.html">Entrar</a></p>
+      </div>
+
+      <footer class="register-footer auth-footer">
+        <p>© 2025 Elysium. Todos os direitos reservados.</p>
+      </footer>
+    </div>
+  </body>
+</html>

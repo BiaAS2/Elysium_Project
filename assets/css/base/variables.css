@@ -1,0 +1,95 @@
+/**
+ * Variáveis CSS - Elysium
+ *
+ * Este arquivo é responsável por
+ * definir todas as variáveis
+ * CSS customizadas utilizadas
+ * em todo o projeto.
+ *
+ * Inclui cores, tipografia,
+ * espaçamentos, bordas,
+ * dimensões, transições
+ * e breakpoints.
+ *
+ * @author Lucelho Silva
+ * @version 2.0
+ * @since 2025
+ */
+:root {
+  /* Cores principais */
+  --primary-purple: #8a3beb;
+  --primary-purple-hover: #732bb0;
+  --secondary-purple: #9532ce;
+  --dark-purple: #3e3457;
+  --gradient-purple: linear-gradient(180deg, #3e3457 18%, #6c21ae 88%);
+  --gradient-sidebar: linear-gradient(180.01deg, #3e3457 17.92%, rgba(108, 33, 166, 0.884) 98.23%);
+  --gradient-toggle-light: linear-gradient(180deg, #fa77e9, #9532ce);
+  --gradient-toggle-dark: linear-gradient(180deg, #771eeb, #3c2bce);
+  --gradient-hover: linear-gradient(90deg, #7fc9fd 2.8%, rgb(253, 20, 133) 84.11%);
+
+  /* Cores neutras */
+  --white: #ffffff;
+  --black: #000000;
+  --gray-light: #f0f2f5;
+  --gray-medium: #ddd;
+  --gray-dark: #555;
+  --gray-text: #333;
+  --gray-border: #ccc;
+  --gray-placeholder: #6e6e6e;
+  --gray-avatar: #d9d9d9;
+  --gray-toggle-bg: #eadaf1;
+  --gray-toggle-dark: #170647;
+
+  /* Transparências */
+  --bg-transparent: rgba(220, 193, 242, 0.75);
+  --shadow: rgba(0, 0, 0, 0.1);
+  --shadow-strong: #00000081;
+  --overlay: rgba(255, 255, 255, 0.1);
+
+  /* Tipografia */
+  --font-family: "Inter", sans-serif;
+  --font-size-small: 0.8rem;
+  --font-size-normal: 0.9rem;
+  --font-size-medium: 1rem;
+  --font-size-large: 1.2rem;
+  --font-size-xlarge: 1.3rem;
+
+  /* Espaçamentos */
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+
+  /* Bordas */
+  --border-radius-small: 4px;
+  --border-radius-medium: 8px;
+  --border-radius-large: 20px;
+  --border-radius-xlarge: 40px;
+  --border-radius-round: 50px;
+  --border-radius-circle: 50%;
+
+  /* Breakpoints */
+  --mobile-max: 768px;
+  --tablet-min: 768px;
+  --tablet-max: 992px;
+  --desktop-min: 993px;
+
+  /* Dimensões */
+  --sidebar-width: 240px;
+  --sidebar-width-settings: 20rem;
+  --input-height: 3rem;
+  --avatar-size: 80px;
+  --button-height: 0.75rem;
+
+  /* Transições */
+  --transition-fast: 0.3s;
+  --transition-medium: 0.4s;
+  --transition-slow: 1.4s;
+
+  /* Sombras */
+  --shadow-light: 0 4px 12px var(--shadow);
+  --shadow-medium: 3px 0px 5px var(--shadow-strong);
+  --shadow-inset: inset 15px -10px 20px 10px rgba(0, 0, 0, 0.25);
+  --shadow-toggle: inset 0px 5px 15px rgba(0, 0, 0, 0.4), inset 0px -5px 15px rgba(255, 255, 255, 0.4);
+}

@@ -1,0 +1,54 @@
+/**
+ * Arquivo Principal de Estilos - Elysium
+ *
+ * Este arquivo é responsável por
+ * importar todos os estilos
+ * modulares do projeto Elysium
+ * de forma organizada.
+ *
+ * Inclui reset, variáveis,
+ * componentes, layouts e
+ * estilos responsivos para
+ * todas as páginas.
+ *
+ * @author Lucelho Silva
+ * @version 2.0
+ * @since 2025
+ */
+@import url("./base/reset.css");
+@import url("./base/variables.css");
+@import url("./base/typography.css");
+@import url("./base/base.css");
+
+/* Layout styles */
+@import url("./layout/containers.css");
+@import url("./layout/header.css");
+@import url("./layout/footer.css");
+
+/* Component styles */
+@import url("./components/buttons.css");
+@import url("./components/forms.css");
+@import url("./components/cards.css");
+@import url("./components/sidebar.css");
+@import url("./components/avatar.css");
+@import url("./components/toggle.css");
+@import url("./components/waveform.css");
+
+/* Page-specific styles */
+@import url("./pages/login.css");
+@import url("./pages/cadastre.css");
+@import url("./pages/chat.css");
+@import url("./pages/settings.css");
+
+/* Responsive styles - Sempre por último */
+@import url("./responsive/mobile.css");
+@import url("./responsive/tablet.css");
+@import url("./responsive/desktop.css");
+
+/* Global body override for specific pages */
+body {
+  font-family: var(--font-family);
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}

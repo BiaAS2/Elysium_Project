@@ -1,0 +1,116 @@
+/**
+ * Página de Login - Elysium
+ *
+ * Este arquivo é responsável por
+ * definir estilos específicos
+ * para a página de login
+ * do sistema.
+ *
+ * Inclui layout centralizado,
+ * header com logo, formulário
+ * de login, ações e
+ * botões sociais.
+ *
+ * @author Lucelho Silva
+ * @version 2.0
+ * @since 2025
+ */
+.auth-header {
+  text-align: center;
+  margin-bottom: var(--spacing-lg);
+}
+
+.auth-header img {
+  width: 80px;
+  height: 80px;
+  border-radius: var(--border-radius-circle);
+  margin: 0 auto var(--spacing-md) auto;
+  display: block;
+}
+
+.auth-header h1 {
+  font-size: var(--font-size-xlarge);
+  margin-bottom: var(--spacing-sm);
+  color: var(--gray-text);
+}
+
+.auth-header p {
+  color: var(--gray-dark);
+  margin: 0;
+}
+
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: var(--gray-light);
+}
+
+.login-container {
+  background: var(--white);
+  padding: var(--spacing-xl);
+  border-radius: var(--border-radius-medium);
+  box-shadow: var(--shadow-light);
+  width: 100%;
+  max-width: 400px;
+}
+
+.login-header {
+  text-align: center;
+  margin-bottom: var(--spacing-lg);
+}
+
+.login-header img {
+  width: 80px;
+  height: 80px;
+  border-radius: var(--border-radius-circle);
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.login-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: var(--spacing-sm);
+}
+
+.login-actions a {
+  font-size: var(--font-size-normal);
+  color: var(--primary-purple);
+  text-decoration: none;
+}
+
+.login-actions a:hover {
+  text-decoration: underline;
+}
+
+.login-social {
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing-md);
+  margin: var(--spacing-lg) 0;
+}
+
+.login-social img {
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  transition: transform var(--transition-fast);
+}
+
+.login-social img:hover {
+  transform: scale(1.1);
+}
+
+.login-footer p {
+  text-align: center;
+  font-size: var(--font-size-small);
+  color: #777;
+  margin: 0;
+}

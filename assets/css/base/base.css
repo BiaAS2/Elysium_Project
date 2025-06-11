@@ -1,0 +1,142 @@
+/**
+ * Estilos Base - Elysium
+ *
+ * Este arquivo é responsável por
+ * definir estilos básicos e
+ * classes utilitárias para
+ * layout e posicionamento.
+ *
+ * Inclui utilitários para
+ * flexbox, text-align,
+ * spacing, visibility e
+ * border-radius.
+ *
+ * @author Lucelho Silva
+ * @version 2.0
+ * @since 2025
+ */
+body {
+  font-family: var(--font-family);
+  color: var(--gray-text);
+  background-color: var(--gray-light);
+  min-height: 100vh;
+}
+
+/* Layout utilities */
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-between {
+  justify-content: space-between;
+}
+
+.flex-grow {
+  flex-grow: 1;
+}
+
+/* Text utilities */
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+/* Spacing utilities */
+.m-0 {
+  margin: 0;
+}
+.mt-1 {
+  margin-top: var(--spacing-sm);
+}
+.mb-1 {
+  margin-bottom: var(--spacing-sm);
+}
+.m-1 {
+  margin: var(--spacing-sm);
+}
+.mt-2 {
+  margin-top: var(--spacing-md);
+}
+.mb-2 {
+  margin-bottom: var(--spacing-md);
+}
+.m-2 {
+  margin: var(--spacing-md);
+}
+
+.p-0 {
+  padding: 0;
+}
+.pt-1 {
+  padding-top: var(--spacing-sm);
+}
+.pb-1 {
+  padding-bottom: var(--spacing-sm);
+}
+.p-1 {
+  padding: var(--spacing-sm);
+}
+.pt-2 {
+  padding-top: var(--spacing-md);
+}
+.pb-2 {
+  padding-bottom: var(--spacing-md);
+}
+.p-2 {
+  padding: var(--spacing-md);
+}
+
+/* Visibility utilities */
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+
+/* Position utilities */
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.fixed {
+  position: fixed;
+}
+
+/* Border radius utilities */
+.rounded-sm {
+  border-radius: var(--border-radius-small);
+}
+.rounded-md {
+  border-radius: var(--border-radius-medium);
+}
+.rounded-lg {
+  border-radius: var(--border-radius-large);
+}
+.rounded-xl {
+  border-radius: var(--border-radius-xlarge);
+}
+.rounded-full {
+  border-radius: var(--border-radius-circle);
+}

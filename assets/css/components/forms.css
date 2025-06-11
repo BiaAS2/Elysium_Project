@@ -1,0 +1,132 @@
+/**
+ * Componente Formulários - Elysium
+ *
+ * Este arquivo é responsável por
+ * definir estilos para todos
+ * os elementos de formulário
+ * do projeto.
+ *
+ * Inclui inputs, labels,
+ * grupos de checkbox e radio,
+ * inputs sublinhados e
+ * containers de input.
+ *
+ * @author Lucelho Silva
+ * @version 2.0
+ * @since 2025
+ */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+/* Form group */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: var(--spacing-md);
+}
+
+/* Labels */
+.form-label {
+  font-size: var(--font-size-normal);
+  margin-bottom: var(--spacing-xs);
+  color: var(--gray-text);
+}
+
+/* Inputs */
+.form-input {
+  padding: var(--button-height);
+  font-size: var(--font-size-medium);
+  border: 1px solid var(--gray-border);
+  border-radius: var(--border-radius-small);
+  outline: none;
+  transition: border-color var(--transition-fast);
+}
+
+.form-input:focus {
+  border-color: var(--primary-purple);
+}
+
+/* Underlined inputs (settings) */
+.form-input-underlined {
+  border: none;
+  border-bottom: 1px solid var(--black);
+  background: transparent;
+  outline: none;
+  padding: var(--spacing-xs);
+  font-family: var(--font-family);
+}
+
+.form-input-underlined:focus {
+  border-bottom-color: var(--primary-purple);
+}
+
+/* Checkbox groups */
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--spacing-md);
+}
+
+.checkbox-group input {
+  margin-right: var(--spacing-sm);
+}
+
+.checkbox-group label {
+  font-size: var(--font-size-normal);
+  color: var(--gray-text);
+}
+
+.checkbox-group a {
+  color: var(--primary-purple);
+  text-decoration: none;
+}
+
+.checkbox-group a:hover {
+  text-decoration: underline;
+}
+
+/* Radio groups */
+.radio-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.radio-group label {
+  display: flex;
+  align-items: center;
+  font-size: var(--font-size-normal);
+  cursor: pointer;
+}
+
+.radio-group input[type="radio"] {
+  margin-right: var(--spacing-sm);
+}
+
+/* Input container (chat) */
+.input-container {
+  display: flex;
+  align-items: center;
+  padding: var(--button-height);
+  background: var(--white);
+  border-top: 1px solid var(--gray-border);
+}
+
+.input-container input {
+  flex-grow: 1;
+  padding: var(--button-height);
+  border: 1px solid var(--gray-border);
+  border-radius: var(--border-radius-large) 0 0 var(--border-radius-large);
+  font-size: var(--font-size-medium);
+  outline: none;
+}
+
+.input-container .mic {
+  margin-left: var(--spacing-sm);
+  cursor: pointer;
+  font-size: var(--font-size-large);
+  color: var(--gray-dark);
+}

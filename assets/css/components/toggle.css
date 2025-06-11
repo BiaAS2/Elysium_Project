@@ -1,0 +1,97 @@
+/**
+ * Componente Toggle - Elysium
+ *
+ * Este arquivo é responsável por
+ * definir estilos para elementos
+ * de toggle switch utilizados
+ * nas configurações.
+ *
+ * Inclui toggle de tema
+ * (claro/escuro) com ícones
+ * de sol e lua, animações
+ * e transições suaves.
+ *
+ * @author Lucelho Silva
+ * @version 2.0
+ * @since 2025
+ */
+.theme-toggle {
+  position: relative;
+  width: 7rem;
+  font-size: var(--font-size-large);
+}
+
+.toggle-switch {
+  width: 5rem;
+  height: 1.8rem;
+  position: relative;
+  bottom: 0.7rem;
+  display: block;
+  background: var(--gray-toggle-bg);
+  border-radius: 200px;
+  box-shadow: var(--shadow-toggle);
+  cursor: pointer;
+  transition: var(--transition-fast);
+}
+
+.toggle-switch:after {
+  content: "";
+  width: 1.5rem;
+  height: 1.5rem;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  background: var(--gradient-toggle-light);
+  border-radius: 100px;
+  box-shadow: 0px, 5px, 10px rgba(0, 0, 0, 2);
+  transition: var(--transition-fast);
+}
+
+.toggle-input {
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+
+.toggle-input:checked + .toggle-switch {
+  background-color: var(--gray-toggle-dark);
+}
+
+.toggle-input:checked + .toggle-switch::after {
+  left: 4.8rem;
+  transform: translateX(-100%);
+  background: var(--gradient-toggle-dark);
+}
+
+.toggle-switch:active::after {
+  width: 2rem;
+}
+
+/* Toggle icons */
+.toggle-switch svg {
+  position: absolute;
+  width: 1.5rem;
+  top: 3px;
+  z-index: 100;
+  height: auto;
+}
+
+.toggle-switch svg.sun {
+  left: 4px;
+  fill: var(--white);
+  transition: var(--transition-fast);
+}
+
+.toggle-switch svg.moon {
+  left: 3.4rem;
+  fill: #7e7e7e;
+  transition: var(--transition-fast);
+}
+
+.toggle-input:checked + .toggle-switch svg.sun {
+  fill: #7e7e7e;
+}
+
+.toggle-input:checked + .toggle-switch svg.moon {
+  fill: var(--white);
+}

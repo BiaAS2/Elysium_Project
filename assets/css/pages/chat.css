@@ -1,0 +1,77 @@
+/**
+ * Página de Chat - Elysium
+ *
+ * Este arquivo é responsável por
+ * definir estilos específicos
+ * para a página principal
+ * do dashboard de chat.
+ *
+ * Inclui layout flexbox,
+ * sidebar lateral, área
+ * principal e elementos
+ * de entrada de mensagem.
+ *
+ * @author Lucelho Silva
+ * @version 2.0
+ * @since 2025
+ */
+.chat-page {
+  display: flex;
+  font-family: var(--font-family);
+  height: 100vh;
+  background: var(--gray-light);
+}
+
+.chat-sidebar {
+  width: var(--sidebar-width);
+  background: var(--gradient-purple);
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--spacing-md);
+}
+
+.chat-main {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+}
+
+/* Message input styling */
+.message-input {
+  display: block;
+  width: 100%;
+  color: var(--gray-placeholder);
+  font-style: normal;
+  font-size: var(--font-size-medium);
+  border-style: none;
+  background: none;
+  outline: none;
+}
+
+/* Send triangles (mobile) */
+.send-triangle-black {
+  position: relative;
+  right: 0.7rem;
+  width: 0;
+  height: 0;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-left: 20px solid var(--black);
+  border-radius: 3px;
+}
+
+.send-triangle-purple {
+  position: relative;
+  right: 1.6rem;
+  bottom: 0.6rem;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 15px solid var(--primary-purple);
+  border-radius: 3px;
+}

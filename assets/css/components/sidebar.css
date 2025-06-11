@@ -1,0 +1,155 @@
+/**
+ * Componente Sidebar - Elysium
+ *
+ * Este arquivo é responsável por
+ * definir estilos para elementos
+ * de navegação lateral
+ * (sidebar) do projeto.
+ *
+ * Inclui sidebar principal,
+ * sidebar de configurações,
+ * navegação, menu toggle
+ * e elementos internos.
+ *
+ * @author Lucelho Silva
+ * @version 2.0
+ * @since 2025
+ */
+
+.sidebar {
+  width: var(--sidebar-width);
+  background: var(--gradient-purple);
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--spacing-md);
+}
+
+/* Settings sidebar */
+.sidebar-settings {
+  font-family: var(--font-family);
+  background: var(--gradient-sidebar);
+  width: var(--sidebar-width-settings);
+  height: 100vh;
+  border-radius: 0px var(--border-radius-xlarge) var(--border-radius-xlarge) 0px;
+  box-shadow: var(--shadow-medium);
+  position: relative;
+  z-index: 1000;
+  transform: translateX(0%);
+  transition: all var(--transition-medium) linear;
+  overflow: hidden; /* Remove qualquer scroll interno */
+}
+
+.sidebar-settings.show {
+  transform: translateX(-100%);
+}
+
+/* Navigation */
+.sidebar-nav {
+  list-style: none;
+  width: 100%;
+  flex-grow: 1;
+}
+
+.sidebar-nav li {
+  width: 100%;
+}
+
+.sidebar-nav a {
+  display: block;
+  padding: var(--button-height) var(--spacing-md);
+  color: var(--white);
+  text-decoration: none;
+  transition: background var(--transition-fast);
+  font-size: var(--font-size-medium);
+}
+
+.sidebar-nav a:hover {
+  background: var(--overlay);
+}
+
+/* Settings navigation - CORRIGIDO */
+.sidebar-nav-settings {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  padding-top: var(--spacing-xl);
+}
+
+.sidebar-nav-settings .nav-item {
+  margin-bottom: var(--spacing-lg);
+}
+
+.sidebar-nav-settings .nav-link {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  padding: var(--spacing-md);
+  color: var(--white);
+  text-decoration: none;
+  cursor: pointer;
+  transition: var(--transition-fast);
+  font-size: var(--font-size-medium);
+}
+
+.sidebar-nav-settings .nav-link:hover {
+  background: var(--gradient-hover);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.sidebar-nav-settings .nav-icon {
+  width: 2.5rem;
+  height: auto;
+  filter: brightness(1);
+  transition: transform var(--transition-fast);
+}
+
+.sidebar-nav-settings .nav-link:hover .nav-icon {
+  transform: scale(1.1);
+}
+
+/* User info */
+.user-info {
+  text-align: center;
+  margin-bottom: var(--spacing-xl);
+}
+
+.user-info h1 {
+  font-size: var(--font-size-large);
+  font-weight: 500;
+}
+
+.user-info p {
+  font-size: var(--font-size-normal);
+  opacity: 0.8;
+}
+
+/* Sidebar footer */
+.sidebar-footer {
+  font-size: var(--font-size-small);
+  padding: var(--spacing-md) 0;
+}
+
+/* Menu toggle */
+.menu-toggle {
+  position: absolute;
+  font-size: 2rem;
+  color: var(--white);
+  cursor: pointer;
+}
+
+/* Back arrow */
+.back-arrow {
+  position: relative;
+  cursor: pointer;
+}
+
+.back-arrow:hover {
+  background: var(--gradient-hover);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}

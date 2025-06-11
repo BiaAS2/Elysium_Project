@@ -1,0 +1,127 @@
+/**
+ * Estilos Responsivos Desktop - Elysium
+ *
+ * Este arquivo é responsável por
+ * definir estilos específicos
+ * para dispositivos desktop
+ * (min-width: 993px).
+ *
+ * Inclui layout completo,
+ * sidebar fixa, elementos
+ * em tamanho padrão e
+ * funcionalidades completas.
+ *
+ * @author Lucelho Silva
+ * @version 2.0
+ * @since 2025
+ */
+@media screen and (min-width: 993px) {
+  /* Desktop background */
+  .settings-page {
+    display: flex;
+    background: url(../images/configurações_pc.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    font-family: var(--font-family);
+    background-size: auto;
+  }
+
+  /* Desktop sidebar */
+  .sidebar-settings {
+    width: var(--sidebar-width-settings);
+    height: 100vh;
+  }
+
+  .sidebar-settings.show {
+    transform: translateX(0%);
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+
+  .back-arrow {
+    bottom: 18.7rem;
+  }
+
+  /* Desktop settings content */
+  .settings-content {
+    position: relative;
+    width: 830px;
+    height: 100vh;
+    left: 60px;
+    top: 0;
+    padding: var(--spacing-xl);
+  }
+
+  /* Desktop profile */
+  .profile-avatar {
+    padding-bottom: 6rem;
+  }
+
+  .avatar-circle {
+    height: 9rem;
+    width: 10rem;
+  }
+
+  .avatar-saturn {
+    right: 9.5rem;
+    bottom: 2rem;
+  }
+
+  .avatar-edit {
+    top: 4rem;
+    right: 8.6rem;
+  }
+
+  .avatar-head {
+    height: 2.5rem;
+    left: 1.6rem;
+  }
+
+  .avatar-body {
+    width: 3.2rem;
+    height: 3rem;
+    top: 2rem;
+  }
+
+  .profile-section {
+    left: 11rem;
+    bottom: 10rem;
+  }
+
+  .profile-section .edit-input {
+    width: 20rem;
+  }
+
+  /* Desktop info section */
+  .info-section {
+    bottom: 6rem;
+  }
+
+  .info-section .info-input {
+    width: 20rem;
+  }
+
+  /* Desktop theme section */
+  .theme-toggle {
+    bottom: 5rem;
+  }
+
+  /* Desktop language section */
+  .language-section {
+    bottom: 9.2rem;
+    left: 20rem;
+  }
+
+  /* Desktop checkbox section */
+  .checkbox-section {
+    bottom: 15rem;
+  }
+
+  /* Desktop navigation */
+  .sidebar-nav-settings a {
+    font-size: var(--font-size-medium);
+    top: 4rem;
+  }
+}

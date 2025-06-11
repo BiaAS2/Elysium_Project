@@ -1,0 +1,100 @@
+/**
+ * Componente Botões - Elysium
+ *
+ * Este arquivo é responsável por
+ * definir estilos para todos
+ * os tipos de botões
+ * utilizados no projeto.
+ *
+ * Inclui botões primários,
+ * de envio, ícones, imagens
+ * e botões sociais com
+ * estados hover e transições.
+ *
+ * @author Lucelho Silva
+ * @version 2.0
+ * @since 2025
+ */
+.btn {
+  padding: var(--button-height);
+  font-size: var(--font-size-medium);
+  border: none;
+  border-radius: var(--border-radius-small);
+  cursor: pointer;
+  transition: background var(--transition-fast);
+  font-family: var(--font-family);
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Primary button */
+.btn-primary {
+  background: var(--primary-purple);
+  color: var(--white);
+}
+
+.btn-primary:hover {
+  background: var(--primary-purple-hover);
+}
+
+/* Send button */
+.btn-send {
+  padding: var(--button-height) var(--spacing-md);
+  border: none;
+  background: var(--primary-purple);
+  color: var(--white);
+  border-radius: 0 var(--border-radius-large) var(--border-radius-large) 0;
+  cursor: pointer;
+  transition: background var(--transition-fast);
+}
+
+.btn-send:hover {
+  background: var(--primary-purple-hover);
+}
+
+/* Icon buttons */
+.btn-icon {
+  width: 3rem;
+  padding: 0.6rem;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  transition: opacity var(--transition-fast);
+}
+
+.btn-icon:hover {
+  opacity: 0.8;
+}
+
+/* Image buttons */
+.btn-image {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: transform var(--transition-fast);
+}
+
+.btn-image:hover {
+  transform: scale(1.05);
+}
+
+/* Social buttons */
+.social-buttons {
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing-md);
+  margin: var(--spacing-lg) 0;
+}
+
+.social-buttons img {
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  transition: transform var(--transition-fast);
+}
+
+.social-buttons img:hover {
+  transform: scale(1.1);
+}

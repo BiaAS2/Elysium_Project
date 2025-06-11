@@ -1,0 +1,60 @@
+/**
+ * Estilos de Footer - Elysium
+ *
+ * Este arquivo é responsável por
+ * definir estilos para elementos
+ * de rodapé em diferentes
+ * contextos do sistema.
+ *
+ * Inclui footer base, sidebar
+ * footer, settings footer e
+ * auth footer com
+ * posicionamentos específicos.
+ *
+ * @author Lucelho Silva
+ * @version 2.0
+ * @since 2025
+ */
+.footer {
+  text-align: center;
+  margin-top: var(--spacing-lg);
+  font-size: var(--font-size-small);
+  color: #777;
+}
+
+/* Sidebar footer */
+.sidebar .footer {
+  font-size: var(--font-size-small);
+  padding: var(--spacing-md) 0;
+  color: var(--white);
+}
+
+/* Settings footer */
+.settings-footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: var(--white);
+  text-align: center;
+  padding-bottom: var(--spacing-md);
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  font-size: var(--font-size-small);
+  font-style: italic;
+}
+
+/* Auth footer */
+.auth-footer {
+  text-align: center;
+  margin-top: var(--spacing-lg);
+  font-size: var(--font-size-small);
+  color: #777;
+}
+
+.auth-footer p {
+  margin: 0;
+}

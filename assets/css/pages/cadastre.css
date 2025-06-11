@@ -1,0 +1,93 @@
+/**
+ * Página de Cadastro - Elysium
+ *
+ * Este arquivo é responsável por
+ * definir estilos específicos
+ * para a página de registro
+ * de novos usuários.
+ *
+ * Inclui layout centralizado,
+ * formulário de cadastro,
+ * header, footer e
+ * ações de navegação.
+ *
+ * @author Lucelho Silva
+ * @version 2.0
+ * @since 2025
+ */
+.register-header {
+  text-align: center;
+  margin-bottom: var(--spacing-lg);
+}
+
+.register-header img {
+  width: 80px;
+  height: 80px;
+  border-radius: var(--border-radius-circle);
+  margin: 0 auto var(--spacing-md) auto;
+  display: block;
+}
+
+.register-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: var(--gray-light);
+}
+
+.register-container {
+  background: var(--white);
+  padding: var(--spacing-xl);
+  border-radius: var(--border-radius-medium);
+  box-shadow: var(--shadow-light);
+  width: 100%;
+  max-width: 400px;
+}
+
+.register-header {
+  text-align: center;
+  margin-bottom: var(--spacing-lg);
+}
+
+.register-header img {
+  width: 80px;
+  height: 80px;
+  border-radius: var(--border-radius-circle);
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.register-actions {
+  text-align: center;
+  margin-top: var(--spacing-md);
+}
+
+.register-actions p {
+  font-size: var(--font-size-normal);
+  color: var(--gray-dark);
+  margin: 0;
+}
+
+.register-actions a {
+  color: var(--primary-purple);
+  text-decoration: none;
+}
+
+.register-actions a:hover {
+  text-decoration: underline;
+}
+
+.register-footer {
+  text-align: center;
+  margin-top: var(--spacing-lg);
+  font-size: var(--font-size-small);
+  color: #777;
+}
+
+.register-footer p {
+  margin: 0;
+}
